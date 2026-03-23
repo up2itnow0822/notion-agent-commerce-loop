@@ -1,14 +1,15 @@
 {
   "name": "notion-agent-commerce-loop",
   "version": "1.0.0",
-  "description": "An autonomous AI agent commerce pipeline using WebMCP + AgentPay + Notion MCP — three MCP servers orchestrated into a single commerce workflow",
+  "description": "An autonomous AI agent commerce pipeline using WebMCP + AgentPay + Notion MCP \u2014 three MCP servers orchestrated into a single commerce workflow",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "tsx src/index.ts",
     "demo": "tsx src/demo.ts",
-    "setup-notion": "tsx src/setup-notion.ts"
+    "setup-notion": "tsx src/setup-notion.ts",
+    "lint": "eslint src/"
   },
   "keywords": [
     "notion",
@@ -26,12 +27,16 @@
     "@modelcontextprotocol/sdk": "^1.12.0",
     "@notionhq/client": "^2.3.0",
     "agentwallet-sdk": "^1.0.0",
-    "webmcp-sdk": "^1.0.0",
+    "dotenv": "^16.4.0",
     "tsx": "^4.19.0",
     "typescript": "^5.7.0",
-    "dotenv": "^16.4.0"
+    "webmcp-sdk": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0"
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^10.1.0",
+    "globals": "^17.4.0"
   }
 }
