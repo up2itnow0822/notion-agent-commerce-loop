@@ -38,5 +38,9 @@
     "@typescript-eslint/parser": "^8.57.1",
     "eslint": "^10.1.0",
     "globals": "^17.4.0"
+  },
+  "overrides": {
+    "hono": "4.13.16",
+    "@hono/node-server": "1.19.18"
   }
 }
